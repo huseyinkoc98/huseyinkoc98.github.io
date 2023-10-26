@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kullanıcı Kayıt Formu</title>
+</head>
+<body>
+
+<h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+<hr>
+
+<table>
+    <tr>
+        <td>
+            <form>
+                <h4>Hesap Bilgileriniz</h4>
+                <p>Kullanıcı Adı:</p>
+            </td>
+            <td>
+                <input type="text" name="username" placeholder="Kullanıcı adı giriniz" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Eposta:</p>
+            </td>
+            <td>
+                <input type="email" name="eposta" placeholder="Eposta giriniz" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Parola:</p>
+            </td>
+            <td>
+                <input type="password" name="parola" placeholder="parola giriniz" required>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <h4>Kişisel Bilgileriniz</h4>
+                <p>Ad:</p>
+            </td>
+            <td>
+                <input type="text" name="ad">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Soyad:</p>
+            </td>
+            <td>
+                <input type="text" name="soyad">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Şehir:</p>
+            </td>
+            <td>
+                <select name="sehir">
+                    <option>Seçiniz</option>
+                    <option>Ankara</option>
+                    <option>İstanbul</option>
+                    <option>Kocaeli</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Cinsiyet:</p>
+            </td>
+            <td>
+                <input type="radio" name="cinsiyet"> Erkek
+                <input type="radio" name="cinsiyet"> Kadın
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Hobileriniz:</p>
+            </td>
+            <td>
+                <input type="checkbox" name="hobiler"> Sinema
+                <input type="checkbox" name="hobiler"> Gezmek
+                <input type="checkbox" name="hobiler"> Spor
+                <input type="checkbox" name="hobiler"> Kitap
+            </td>
+        </tr>
+    </table>
+
+    <p><input type="submit" value="Kaydet"></p>
+</form>
+
+</body>
+</html>
