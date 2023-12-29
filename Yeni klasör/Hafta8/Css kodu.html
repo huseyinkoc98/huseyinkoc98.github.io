@@ -1,0 +1,93 @@
+/* Animasyonlu Div Stilleri */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Yukarı Aşağı Giden Animasyon */
+.up-down {
+    background-color: #3498db;
+    animation: upDown 2s ease-in-out infinite alternate;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+/* Büyüyüp Küçülen ve Rengi Değişen Animasyon */
+.grow-shrink {
+    background-color: #2ecc71;
+    animation: growShrink 2s ease-in-out infinite alternate;
+}
+
+@keyframes growShrink {
+    0% {
+        transform: scale(1);
+        background-color: #2ecc71;
+    }
+    100% {
+        transform: scale(1.5);
+        background-color: #e74c3c;
+    }
+}
+
+/* Transparanlık Değişen Animasyon */
+.transparent {
+    background-color: #e67e22;
+    animation: transparent 2s ease-in-out infinite alternate;
+}
+
+@keyframes transparent {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+/* Sağa Sola Giden Animasyon */
+.left-right {
+    background-color: #f39c12;
+    animation: leftRight 2s ease-in-out infinite alternate;
+}
+
+@keyframes leftRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+/* Dönen Animasyon */
+.rotate {
+    background-color: #9b59b6;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

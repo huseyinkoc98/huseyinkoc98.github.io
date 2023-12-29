@@ -1,0 +1,17 @@
+/* External CSS Stili */
+
+.ders-programi {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ders-programi th, .ders-programi td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.ders-programi th {
+    background-color: #f2f2f2;
+}
